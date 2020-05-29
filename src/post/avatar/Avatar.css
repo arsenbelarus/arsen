@@ -1,0 +1,13 @@
+.avatarImage {
+    width: 15%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 5px;
+}
+
+.avatarImage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
