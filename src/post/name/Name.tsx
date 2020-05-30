@@ -1,10 +1,12 @@
 import React from "react";
-import './Name.css'
-
-function Name() {
+import s from './Name.module.css'
+type propsName = {
+    name: string,
+}
+function Name(props: propsName) {
     return (
-        <div className={"fullName"}>
-            Arsen Vaskanian
+        <div className={s.fullName}>
+            {props.name}
         </div>
     );
 }

@@ -1,10 +1,12 @@
 import React from "react";
-import './Time.css'
-
-function Time() {
+import s from './Time.module.css'
+type propsTime = {
+    time: string,
+}
+function Time(props: propsTime) {
     return (
-        <div className={"time"}>
-            22:00
+        <div className={s.time}>
+            {props.time}
         </div>
     );
 }

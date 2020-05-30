@@ -1,10 +1,12 @@
 import React from "react";
-import './Message.css'
-
-function Message() {
+import s from './Message.module.css'
+type propsMessage = {
+    message: string,
+}
+function Message(props: propsMessage) {
     return (
-        <div className={"message"}>
-            npm start нажимал?
+        <div className={s.message}>
+            {props.message}
         </div>
     )
 
