@@ -1,0 +1,40 @@
+.hobbiesContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 30%;
+    background-color: midnightblue;
+    border-radius: 20px;
+    margin: 50px auto 20px auto;
+    color: ivory;
+}
+
+.buttonContainer {
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    background-color: midnightblue;
+    border-radius: 20px;
+    margin: 0px auto 50px auto;
+    color: ivory;
+}
+
+.buttonContainer h2 {
+    margin-top: 0;
+
+}
+
+.buttonContainer .button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: midnightblue;
+    color: ivory;
+    background-color: deeppink;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}

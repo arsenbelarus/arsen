@@ -5,6 +5,7 @@ import Message from './message/Message';
 import Avatar from "./avatar/Avatar";
 import Time from "./Time/Time";
 import avatar from "./avatar/avatar.jpg";
+
 type propsPost = {
     postName: string,
     postMessage: string,
@@ -13,16 +14,20 @@ type propsPost = {
 
 function Post(props: propsPost) {
     return (
-        <div className={s.main}>
-            <div className={s.container}>
-                <Avatar src={avatar} alt={'avatar'}/>
-                <div className={s.messageBlock}>
-                    <Name name={props.postName}/>
-                    <Message message={props.postMessage}/>
-                    <Time time={props.postTime}/>
+
+        <div className={s.container}>
+            <div className={s.tableRow}>
+                <div className={s.tableCell}>
+                    <Avatar src={avatar} alt={'avatar'}/>
+                    <div className={s.messageBlock}>
+                        <Name name={props.postName}/>
+                        <Message message={props.postMessage}/>
+                        <Time time={props.postTime}/>
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 }
 

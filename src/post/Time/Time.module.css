@@ -1,6 +1,11 @@
 .time {
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
-    color: lightslategrey;
+    float: right;
+    padding: 10px;
+}
+
+{
+position: absolute;
+right: 10px;
+bottom: 5px;
+color: lightslategrey;
 }

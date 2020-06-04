@@ -1,9 +1,6 @@
 .avatarImage {
-    width: 15%;
     display: inline-block;
-    position: absolute;
-    bottom: 10%;
-    left: 5px;
+    margin: 0px 0px 10px 10px;
 }
 
 .avatarImage img {

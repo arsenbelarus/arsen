@@ -1,0 +1,31 @@
+.hobby {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    text-align: left;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.name {
+    width: 40%;
+}
+
+.priority {
+    width: 40%;
+}
+
+.removeButton {
+    width: 20%;
+}
+
+.removeButton button {
+    border-radius: 5px;
+    color: ivory;
+    background-color: deeppink;
+    font-weight: bold;
+}
