@@ -9,10 +9,9 @@ type propsType = {
 type HobbiesPropertyValues = "all" | "high" | "middle" | "low";
 
 function Hobbies(props: propsType) {
-    let i = 1;
-    let key = 1;
-    let [hobbies, setHobbies] = useState(props.mydata.map((h: { n: 'string', p: 'string' }) =>
-        <Hobby name={h.n} priority={h.p} id={i++} key={key++} removeHobby={removeHobby}/>));
+
+    let [hobbies, setHobbies] = useState(props.mydata.map((h: { id: number, n: 'string', p: 'string' }) =>
+        <Hobby name={h.n} priority={h.p} id={h.id} key={h.id} removeHobby={removeHobby}/>));
 
     function removeHobby(id: number) {
         hobbies = hobbies.filter(h => h.props.id !== id);

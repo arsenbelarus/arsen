@@ -4,7 +4,7 @@ import Post from "./post/Post";
 import Hobbies from "./hobbies/Hobbies";
 
 type propsType = {
-    hobbies: any
+    hobbies: Array<any>
 }
 function App(props: propsType) {
     return (
