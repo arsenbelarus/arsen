@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import Post from "./post/Post";
 import Hobbies from "./hobbies/Hobbies";
+import Input from "./input/Input";
 
 type propsType = {
-    hobbies: Array<any>
+    hobbies: Array<{ id: number, n: string, p: string }>
 }
 function App(props: propsType) {
     return (
@@ -18,6 +19,8 @@ function App(props: propsType) {
             </div>
 
             <Hobbies mydata={props.hobbies}/>
+            
+            <Input />
 
         </div>
 
