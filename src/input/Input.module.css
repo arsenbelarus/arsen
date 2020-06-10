@@ -1,0 +1,50 @@
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px 0;
+    border: 2px solid darkred;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 30%;
+    background-color: gray;
+    border-bottom: 2px dotted black;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: ivory;
+}
+
+::placeholder {
+    color: deeppink;
+    font-weight: normal;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-color: midnightblue;
+    color: ivory;
+    background-color: deeppink;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+.span {
+    font-size: 1.5em;
+    color: ivory;
+    border: 1px dotted black;
+    border-left: none;
+    border-right: none;
+    padding: 20px 0px;
+}
