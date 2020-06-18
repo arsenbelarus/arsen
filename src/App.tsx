@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {KeyboardEvent} from 'react';
 import './App.css';
 import Post from "./post/Post";
 import Hobbies from "./hobbies/Hobbies";
 import Input from "./input/Input";
+import InputNya from "./Homework4";
 
 type propsType = {
     hobbies: Array<{ id: number, n: string, p: string }>
 }
 function App(props: propsType) {
+    const test = () => {
+        alert("Кажется, я все понял")
+    }
+    const buttonTest = () => {
+
+    }
+
     return (
         <div>
             <div>
@@ -21,6 +29,8 @@ function App(props: propsType) {
             <Hobbies mydata={props.hobbies}/>
             
             <Input />
+
+            <InputNya onEnter={test} error={'Input should not be empty'} placeholder={'Домашнее задание 4'}/>
 
         </div>
 

@@ -4,7 +4,7 @@ import s from './Input.module.css';
 
 function Input () {
 
-    let [names, setNames] = useState<Array<object>>([])
+    let [names, setNames] = useState<Array<{id: string, name: string}>>([])
 
     const addName = (nameValue:string) => {
         let newName = {id: v1(), name: nameValue}

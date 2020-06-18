@@ -3,14 +3,14 @@ import s from './Hobbies.module.css';
 import Hobby from "./hobby/Hobby";
 
 type propsType = {
-    mydata: Array<any>,
+    mydata: Array<{ id: number, n: string, p: string }>,
 }
 
 type HobbiesPropertyValues = "all" | "high" | "middle" | "low";
 
 function Hobbies(props: propsType) {
 
-    let [hobbies, setHobbies] = useState(props.mydata.map((h: { id: number, n: 'string', p: 'string' }) =>
+    let [hobbies, setHobbies] = useState(props.mydata.map((h: { id: number, n: string, p: string }) =>
         <Hobby name={h.n} priority={h.p} id={h.id} key={h.id} removeHobby={removeHobby}/>));
 
     function removeHobby(id: number) {
