@@ -1,0 +1,27 @@
+.button {
+    width: max-content;
+    height: max-content;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-color: midnightblue;
+    color: ivory;
+    background-color: deeppink;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.buttonRed {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-color: midnightblue;
+    color: ivory;
+    background-color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
