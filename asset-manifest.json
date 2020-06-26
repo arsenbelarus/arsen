@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/arsen/static/css/main.03e63318.chunk.css",
+    "main.js": "/arsen/static/js/main.bd1016ef.chunk.js",
+    "main.js.map": "/arsen/static/js/main.bd1016ef.chunk.js.map",
+    "runtime-main.js": "/arsen/static/js/runtime-main.58d09987.js",
+    "runtime-main.js.map": "/arsen/static/js/runtime-main.58d09987.js.map",
+    "static/js/2.3705438f.chunk.js": "/arsen/static/js/2.3705438f.chunk.js",
+    "static/js/2.3705438f.chunk.js.map": "/arsen/static/js/2.3705438f.chunk.js.map",
+    "index.html": "/arsen/index.html",
+    "precache-manifest.d303fee3d4a709edd9e23db7d947bd99.js": "/arsen/precache-manifest.d303fee3d4a709edd9e23db7d947bd99.js",
+    "service-worker.js": "/arsen/service-worker.js",
+    "static/css/main.03e63318.chunk.css.map": "/arsen/static/css/main.03e63318.chunk.css.map",
+    "static/js/2.3705438f.chunk.js.LICENSE.txt": "/arsen/static/js/2.3705438f.chunk.js.LICENSE.txt",
+    "static/media/avatar.jpg": "/arsen/static/media/avatar.b7c5e33e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.58d09987.js",
+    "static/js/2.3705438f.chunk.js",
+    "static/css/main.03e63318.chunk.css",
+    "static/js/main.bd1016ef.chunk.js"
+  ]
+}
