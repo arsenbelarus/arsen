@@ -1,25 +1,29 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React from 'react';
 import './App.css';
-import Post from "./post/Post";
-import Hobbies from "./hobbies/Hobbies";
-import MyComponents from "./MyComponents";
+import {HashRouter, NavLink, Route} from "react-router-dom";
+import PreJunior from "./PreJunior";
+import JuniorPlus from "./JuniorPlus";
+import Junior from "./Junior";
 
 type propsType = {
     hobbies: Array<{ id: number, n: string, p: string }>
 }
-
-function App(props: propsType) {
+const App = (props:propsType) => {
 
 
     return (
+        <HashRouter>
         <div>
-            <div>
-                <Post postName={'Arsen Vaskanian'} postMessage={'npm start нажимал?'} postTime={'22:00'}/>
-            </div>
-            <Hobbies mydata={props.hobbies}/>
-
-            <MyComponents/>
+            <nav className={"navbar"}>
+                <NavLink to={"/PreJunior"} className={"menuItem"} activeClassName={"active"}> PreJunior </NavLink>
+                <NavLink to={"/Junior"} className={"menuItem"} activeClassName={"active"}> Junior </NavLink>
+                <NavLink to={"/JuniorPlus"} className={"menuItem"} activeClassName={"active"}> JuniorPlus </NavLink>
+            </nav>
+            <Route path='/PreJunior' render={() => <PreJunior hobbies={props.hobbies}/>}/>
+            <Route path='/Junior' render={() => <Junior />}/>
+            <Route path='/JuniorPlus' render={() => <JuniorPlus />}/>
         </div>
+        </HashRouter>
     );
 }
 

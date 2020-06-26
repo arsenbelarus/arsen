@@ -1,0 +1,39 @@
+.navbar {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: deepskyblue;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar:hover {
+    position: relative;
+    top: 0px;
+}
+
+.menuItem {
+    width: 33.33%;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: ivory;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: ivory;
+    font-weight: bold;
+}
+
+.active {
+    background-color: blueviolet;
+}
