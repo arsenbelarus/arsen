@@ -1,0 +1,24 @@
+.container {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.input {
+    color: white;
+    width: 200px;
+    margin: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-bottom: 2px dotted black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: inline-flex;
+}

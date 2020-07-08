@@ -1,0 +1,22 @@
+.container {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.select {
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    box-shadow: 1px 1px black;
+}
+
+.option {
+    text-align: center;
+    padding: 5px;
+
+}

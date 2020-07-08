@@ -6,40 +6,34 @@ import {v1} from "uuid";
 import MyCheckbox from "./common/myCheckbox/MyCheckbox";
 
 const MyComponents = () => {
-    let [names, setNames] = useState<Array<{id: string, name: string}>>([])
-    let [input, setInput] = useState<string>("")
-    let [error, setError] = useState<string>("")
+    let [names, setNames] = useState<Array<{ id: string, name: string }>>([])
+    let [name, setName] = useState< string >("")
 
-    const addName = (nameValue:string) => {
+
+    const addName = (nameValue: string) => {
+        alert(`Hello ${nameValue}`)
         let newName = {id: v1(), name: nameValue}
         let newNames = [...names, newName]
-        setNames (newNames);
+        setNames(newNames);
+        setName('');
     }
-    const inputHandler = () => {
-        if (input) {
-            addName(input);
-            alert (`Hello ${input}. How are you?`)
-            setInput("");
-        } else {
-            setError("error")
-        }
+    const buttonClick = () => {
+        alert(`Hello ${name}`)
+        let newName = {id: v1(), name: name}
+        let newNames = [...names, newName]
+        setNames(newNames);
+        setName("")
     }
-    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setInput(e.currentTarget.value)
-        setError("")
+    const setNameInput = (title: string) => {
+        setName(title)
     }
-    const onKeyPressHandler = (e:KeyboardEvent) => { if (e.charCode === 13) {inputHandler()} }
 
+debugger
     return (
         <div className={s.inputContainer}>
-            <MyInput placeholder={!error? "Enter your name here" : "This field is required"}
-                     value={input}
-                     error={error}
-                     onChange={onChangeHandler}
-                     onKeyPress={onKeyPressHandler}/>
-
-            <MyButton onClick={inputHandler} value={"Add"} isStandard={true}/>
-            <MyCheckbox id={"1"} label={""} />
+            <MyInput  addItem={addName} onChangeTitle={setNameInput} value={name}/>
+            <MyButton onClick={buttonClick} value={"Add"} isStandard={true}/>
+            <MyCheckbox id={"1"} label={""}/>
             <span className={s.span}> {`Total amount of names is ${names.length}`} </span>
         </div>
     )

@@ -2,15 +2,13 @@ import React, {useState, ChangeEvent, KeyboardEvent, ButtonHTMLAttributes} from 
 import {DetailedHTMLProps, InputHTMLAttributes} from "react";
 import s from "./MyButton.module.css"
 export type ButtonNyaPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-    & { inputHandler?: () => void, isStandard?: boolean };
+    & {isStandard?: boolean, value: string, onClick: () => void };
 
-const MyButton: React.FC<ButtonNyaPropsType> = ({inputHandler, isStandard, ...restProps}) => {
+const MyButton = (props: ButtonNyaPropsType) => {
 
     return (
         <div>
-            <button className={ !isStandard? s.buttonRed : s.button }
-                    onClick={inputHandler}
-                    {...restProps}>{!isStandard? "x" : restProps.value}</button>
+            <button onClick={props.onClick} className={!props.isStandard? s.buttonRed : s.button}>{!props.isStandard? "x" : props.value}</button>
         </div>
     );
 };
