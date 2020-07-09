@@ -12,7 +12,7 @@ function Junior() {
         {value: "Chess", checked: false},
     ]
     const [radioValues, setRadioValues] = useState(optionsArray)
-    const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const onRadioChange = (e: ChangeEvent<HTMLInputElement>) => {
         let newValue = e.currentTarget.value
         let stateCopy = [...radioValues];
         let newRadioValues = stateCopy.map((radio) => {
@@ -25,11 +25,22 @@ function Junior() {
         setRadioValues(newRadioValues)
     }
 
+    const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        let newValue = e.currentTarget.value
+        alert (newValue)
+    }
+
+    const onSpanChange = (e: ChangeEvent<HTMLInputElement>) => {
+        debugger
+        let newValue = e.currentTarget.value
+        alert (newValue)
+    }
+
     return (
         <div>
-            <MyEditableSpan spanTitle={"Hello"}/>
-            <MySelect options={optionsArray} value={2}/>
-            <MyRadio options={radioValues} onChange={onChange}/>
+            <MyEditableSpan spanTitle={"Hello"} onChange={onSpanChange}/>
+            <MySelect options={optionsArray} value={2} onChange={onSelectChange}/>
+            <MyRadio options={radioValues} onChange={onRadioChange}/>
         </div>
     );
 }

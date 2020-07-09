@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import s from "./MySelect.module.css"
 
 type MySelectType = {
     options: Array<{ value: string, checked: boolean }>
     value: number
-    onChange?: (someValue: string|number) => void
+    onChange?: (e: ChangeEvent<HTMLSelectElement>) => void
 }
 
 
@@ -12,7 +12,7 @@ const MySelect = (props: MySelectType) => {
 
     return (
         <div className={s.container} >
-            <select className={s.select} >
+            <select className={s.select} onChange={props.onChange}>
                 {props.options.map((option, index) => {
                     if (props.value === index+1) {
                         return <option className={s.option} selected={true} key={index+1}>{option.value}</option>

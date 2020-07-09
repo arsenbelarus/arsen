@@ -15,13 +15,15 @@ const MyRadio = (props: MySelectType) => {
             {props.options.map(radio => {
                 return (
                     <div>
-                        <input type={"radio"}
-                               id={radio.value}
-                               value={radio.value}
-                               name={props.name}
-                               checked={radio.checked}
-                               onChange={props.onChange}/>
-                        <label htmlFor={radio.value}>{radio.value}</label>
+                        <label>
+                            <input type={"radio"}
+                                   id={radio.value}
+                                   value={radio.value}
+                                   name={props.name}
+                                   checked={radio.checked}
+                                   onChange={props.onChange}/>
+                            {radio.value}
+                        </label>
                     </div>
                 )
             })}
