@@ -30,15 +30,13 @@ function Junior() {
         alert (newValue)
     }
 
-    const onSpanChange = (e: ChangeEvent<HTMLInputElement>) => {
-        debugger
-        let newValue = e.currentTarget.value
-        alert (newValue)
-    }
+    const [spanTitle, setSpanTitle] = useState("Change me")
 
     return (
         <div>
-            <MyEditableSpan spanTitle={"Hello"} onChange={onSpanChange}/>
+            <p style={{color: "white", textAlign: "center", fontSize: "1.5em"}}>
+                <strong>Double click</strong> on text will make it editable. Press <strong>enter</strong> to save changes</p>
+            <MyEditableSpan spanTitle={spanTitle} onChange={setSpanTitle}/>
             <MySelect options={optionsArray} value={2} onChange={onSelectChange}/>
             <MyRadio options={radioValues} onChange={onRadioChange}/>
         </div>

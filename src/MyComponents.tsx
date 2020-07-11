@@ -18,11 +18,14 @@ const MyComponents = () => {
         setName('');
     }
     const buttonClick = () => {
-        alert(`Hello ${name}`)
-        let newName = {id: v1(), name: name}
-        let newNames = [...names, newName]
-        setNames(newNames);
-        setName("")
+        if (name.trim()) {
+            alert(`Hello ${name}`)
+            let newName = {id: v1(), name: name}
+            setNames([...names, newName]);
+            setName("")
+        } else {
+            alert("Please enter the name")
+        }
     }
     const setNameInput = (title: string) => {
         setName(title)

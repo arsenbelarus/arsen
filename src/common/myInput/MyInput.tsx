@@ -1,10 +1,9 @@
 import React, {useState, ChangeEvent, KeyboardEvent} from 'react';
 import {DetailedHTMLProps, InputHTMLAttributes} from "react";
 import s from "./MyInput.module.css"
-import MyButton from "../myButton/MyButton";
 
 export type InputNyaPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
-    & { addItem?: (value: string) => void, autoFocus?: boolean, onBlur?: () => void, value?: string, onChangeTitle?: (value: string) => void, };
+    & { addItem?: (value: string) => void, autoFocus?: boolean, onBlur?: () => void, value: string, onChangeTitle?: (value: string) => void, };
 
 const MyInput = (props: InputNyaPropsType, {...restProps}) => {
 

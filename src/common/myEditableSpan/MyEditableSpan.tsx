@@ -2,9 +2,10 @@ import React, {ChangeEvent, useState} from 'react';
 import s from "./MyEditableSpan.module.css"
 import MyInput from "../myInput/MyInput";
 
+
 type MyEditableSpanType = {
     spanTitle: string
-    onChange: (e: ChangeEvent<HTMLInputElement>) => void
+    onChange: (spanTitle: string) => void
 }
 
 
@@ -13,12 +14,15 @@ const MyEditableSpan = (props: MyEditableSpanType) => {
     const onBlur = () => {
         setEditMode(false);
     }
-
+    const addItem = (newValue: string) => {
+        props.onChange (newValue)
+        setEditMode(false)
+    }
     return (
         <div>
             {editMode
-            ? <MyInput autoFocus={true} value={props.spanTitle} onBlur={onBlur} />
-            : <div className={s.container}><span onDoubleClick={() => setEditMode(true)} onChange={props.onChange}> {props.spanTitle} </span></div>}
+            ? <MyInput autoFocus={true} value={props.spanTitle} onBlur={onBlur} addItem={addItem}/>
+            : <div className={s.container}><span onDoubleClick={() => setEditMode(true)}> {props.spanTitle} </span></div>}
         </div>
     )
 
