@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/arsen/static/css/main.3bbebb4e.chunk.css",
-    "main.js": "/arsen/static/js/main.efa08609.chunk.js",
-    "main.js.map": "/arsen/static/js/main.efa08609.chunk.js.map",
+    "main.js": "/arsen/static/js/main.b5307305.chunk.js",
+    "main.js.map": "/arsen/static/js/main.b5307305.chunk.js.map",
     "runtime-main.js": "/arsen/static/js/runtime-main.58d09987.js",
     "runtime-main.js.map": "/arsen/static/js/runtime-main.58d09987.js.map",
     "static/js/2.8dc3d56d.chunk.js": "/arsen/static/js/2.8dc3d56d.chunk.js",
     "static/js/2.8dc3d56d.chunk.js.map": "/arsen/static/js/2.8dc3d56d.chunk.js.map",
     "index.html": "/arsen/index.html",
-    "precache-manifest.97f9ada4384de7b36e4fb838b7db8bbe.js": "/arsen/precache-manifest.97f9ada4384de7b36e4fb838b7db8bbe.js",
+    "precache-manifest.c2a70c7a66c39fccddbb4dd5c467963a.js": "/arsen/precache-manifest.c2a70c7a66c39fccddbb4dd5c467963a.js",
     "service-worker.js": "/arsen/service-worker.js",
     "static/css/main.3bbebb4e.chunk.css.map": "/arsen/static/css/main.3bbebb4e.chunk.css.map",
     "static/js/2.8dc3d56d.chunk.js.LICENSE.txt": "/arsen/static/js/2.8dc3d56d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.58d09987.js",
     "static/js/2.8dc3d56d.chunk.js",
     "static/css/main.3bbebb4e.chunk.css",
-    "static/js/main.efa08609.chunk.js"
+    "static/js/main.b5307305.chunk.js"
   ]
 }
