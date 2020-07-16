@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6a5be55988d3d375a458b98c18141d9",
+    "revision": "a4cd0ccaef5feed8e7a6fc9052af6105",
     "url": "/arsen/index.html"
   },
   {
-    "revision": "88a2ed3f6708b224f2b2",
-    "url": "/arsen/static/css/main.3bbebb4e.chunk.css"
+    "revision": "743f5970779b9163fb89",
+    "url": "/arsen/static/css/main.8bbb643f.chunk.css"
   },
   {
-    "revision": "15cc01bda19ea7d21218",
-    "url": "/arsen/static/js/2.8dc3d56d.chunk.js"
+    "revision": "a61c3b8b7d42626601cf",
+    "url": "/arsen/static/js/2.412ed0e7.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/arsen/static/js/2.8dc3d56d.chunk.js.LICENSE.txt"
+    "url": "/arsen/static/js/2.412ed0e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88a2ed3f6708b224f2b2",
-    "url": "/arsen/static/js/main.b5307305.chunk.js"
+    "revision": "743f5970779b9163fb89",
+    "url": "/arsen/static/js/main.5bc13168.chunk.js"
   },
   {
     "revision": "800ef06338f97ab5cece",
