@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4cd0ccaef5feed8e7a6fc9052af6105",
+    "revision": "39a610983fc8692efc84e5207d1abe4f",
     "url": "/arsen/index.html"
   },
   {
-    "revision": "743f5970779b9163fb89",
+    "revision": "ae00fda1cc8bb86d8610",
     "url": "/arsen/static/css/main.8bbb643f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arsen/static/js/2.412ed0e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "743f5970779b9163fb89",
-    "url": "/arsen/static/js/main.5bc13168.chunk.js"
+    "revision": "ae00fda1cc8bb86d8610",
+    "url": "/arsen/static/js/main.b93fda05.chunk.js"
   },
   {
     "revision": "800ef06338f97ab5cece",
