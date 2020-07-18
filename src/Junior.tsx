@@ -6,6 +6,7 @@ import {v1} from "uuid";
 import PeopleArray from "./peopleArray/PeopleArray";
 import MyButton from "./common/myButton/MyButton";
 import {hwReducer} from "./reducers/reducer";
+import PeopleArrayAndButton from "./peopleArray/PeopleArrayAndButtons";
 
 function Junior() {
 
@@ -42,7 +43,7 @@ function Junior() {
     }
     const [spanTitle, setSpanTitle] = useState("Change me")
 
-    const [peopleArray, setPeopleArray] = useState(people)
+
 
     return (
         <div>
@@ -51,14 +52,7 @@ function Junior() {
             <MyEditableSpan spanTitle={spanTitle} onChange={setSpanTitle}/>
             <MySelect options={optionsArray} value={2} onChange={onSelectChange}/>
             <MyRadio options={radioValues} onChange={onRadioChange}/>
-            <PeopleArray people={peopleArray}/>
-            <div style={{width: "50%", margin: "20px 25%", display: "inline-flex", justifyContent: "center", justifySelf: "center"}}>
-                <MyButton isStandard={true} value={"Sort UP"} onClick={()=>setPeopleArray (hwReducer(peopleArray, {type: "SORT", payload: "NAME-UP"}))}/>
-                <MyButton isStandard={true} value={"Sort DOWN"} onClick={()=>setPeopleArray (hwReducer(peopleArray, {type: "SORT", payload: "NAME-DOWN"}))}/>
-                <MyButton isStandard={true} value={"Sort 18+"} onClick={()=>setPeopleArray (hwReducer(peopleArray, {type: "SORT", payload: "18"}))}/>
-                <MyButton isStandard={true} value={"Sort Age"} onClick={()=>setPeopleArray (hwReducer(peopleArray, {type: "SORT", payload: "AGE-UP"}))}/>
-                <MyButton isStandard={true} value={"Sort Age"} onClick={()=>setPeopleArray (hwReducer(peopleArray, {type: "SORT", payload: "AGE-DOWN"}))}/>
-            </div>
+            <PeopleArrayAndButton people={people}/>
         </div>
     );
 }
