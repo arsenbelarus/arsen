@@ -3,10 +3,8 @@ import MyEditableSpan from "./common/myEditableSpan/MyEditableSpan";
 import MySelect from "./common/mySelect/MySelect";
 import MyRadio from "./common/myRadio/MyRadio";
 import {v1} from "uuid";
-import PeopleArray from "./peopleArray/PeopleArray";
-import MyButton from "./common/myButton/MyButton";
-import {hwReducer} from "./reducers/reducer";
 import PeopleArrayAndButton from "./peopleArray/PeopleArrayAndButtons";
+import DateComponent from "./date/DateComponent";
 
 function Junior() {
 
@@ -53,6 +51,7 @@ function Junior() {
             <MySelect options={optionsArray} value={2} onChange={onSelectChange}/>
             <MyRadio options={radioValues} onChange={onRadioChange}/>
             <PeopleArrayAndButton people={people}/>
+            <DateComponent/>
         </div>
     );
 }

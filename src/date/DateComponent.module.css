@@ -1,0 +1,50 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 30px auto;
+}
+.mainContainer .header {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    color: ivory;
+}
+.container {
+    position: relative;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: midnightblue;
+    border-radius: 20px;
+    color: ivory;
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.date {
+    display: none;
+}
+
+.timer:hover + .date {
+    position: absolute;
+    left: 100px;
+    top: -20px;
+    display: block;
+    color: ivory;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgba(139, 0, 0, 0.5);
+}
