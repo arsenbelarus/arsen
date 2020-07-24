@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/arsen/static/css/main.8bbb643f.chunk.css",
-    "main.js": "/arsen/static/js/main.b93fda05.chunk.js",
-    "main.js.map": "/arsen/static/js/main.b93fda05.chunk.js.map",
+    "main.css": "/arsen/static/css/main.bc478d5e.chunk.css",
+    "main.js": "/arsen/static/js/main.0f6dc527.chunk.js",
+    "main.js.map": "/arsen/static/js/main.0f6dc527.chunk.js.map",
     "runtime-main.js": "/arsen/static/js/runtime-main.58d09987.js",
     "runtime-main.js.map": "/arsen/static/js/runtime-main.58d09987.js.map",
-    "static/js/2.412ed0e7.chunk.js": "/arsen/static/js/2.412ed0e7.chunk.js",
-    "static/js/2.412ed0e7.chunk.js.map": "/arsen/static/js/2.412ed0e7.chunk.js.map",
+    "static/js/2.cf4072d4.chunk.js": "/arsen/static/js/2.cf4072d4.chunk.js",
+    "static/js/2.cf4072d4.chunk.js.map": "/arsen/static/js/2.cf4072d4.chunk.js.map",
     "index.html": "/arsen/index.html",
-    "precache-manifest.98fb6fe67ae1bf673a9556abe74b5dbb.js": "/arsen/precache-manifest.98fb6fe67ae1bf673a9556abe74b5dbb.js",
+    "precache-manifest.2ce9c00690e3e9c4a72f85bf58d53806.js": "/arsen/precache-manifest.2ce9c00690e3e9c4a72f85bf58d53806.js",
     "service-worker.js": "/arsen/service-worker.js",
-    "static/css/main.8bbb643f.chunk.css.map": "/arsen/static/css/main.8bbb643f.chunk.css.map",
-    "static/js/2.412ed0e7.chunk.js.LICENSE.txt": "/arsen/static/js/2.412ed0e7.chunk.js.LICENSE.txt",
+    "static/css/main.bc478d5e.chunk.css.map": "/arsen/static/css/main.bc478d5e.chunk.css.map",
+    "static/js/2.cf4072d4.chunk.js.LICENSE.txt": "/arsen/static/js/2.cf4072d4.chunk.js.LICENSE.txt",
     "static/media/avatar.jpg": "/arsen/static/media/avatar.b7c5e33e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.58d09987.js",
-    "static/js/2.412ed0e7.chunk.js",
-    "static/css/main.8bbb643f.chunk.css",
-    "static/js/main.b93fda05.chunk.js"
+    "static/js/2.cf4072d4.chunk.js",
+    "static/css/main.bc478d5e.chunk.css",
+    "static/js/main.0f6dc527.chunk.js"
   ]
 }
