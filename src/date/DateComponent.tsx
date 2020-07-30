@@ -10,6 +10,7 @@ const DateComponent = (props: DateComponentPropsType) => {
     const [timerId, setTimerId] = useState(moment().format('h:mm:ss a'));
 
     const startTimer = () => {
+        clearInterval(timer)
         timer = setInterval(() => setTimerId(moment().format('h:mm:ss a')), 1000);
     }
 

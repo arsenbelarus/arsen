@@ -5,6 +5,12 @@ import MyRadio from "./common/myRadio/MyRadio";
 import {v1} from "uuid";
 import PeopleArrayAndButton from "./peopleArray/PeopleArrayAndButtons";
 import DateComponent from "./date/DateComponent";
+import MyButton from "./common/myButton/MyButton";
+import {useDispatch, useSelector} from "react-redux";
+import {loadingFalseAC, loadingTrueAC} from "./store/main-reducer";
+import {AppRootStateType} from "./store/store";
+import Preloader from "./common/preloader/Preloader";
+import RunLoader from "./runLoader/RunLoader";
 
 function Junior() {
 
@@ -37,16 +43,17 @@ function Junior() {
 
     const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
         let newValue = e.currentTarget.value
-        alert (newValue)
+        alert(newValue)
     }
     const [spanTitle, setSpanTitle] = useState("Change me")
 
 
-
     return (
         <div>
+            <RunLoader/>
             <p style={{color: "white", textAlign: "center", fontSize: "1.5em"}}>
-                <strong>Double click</strong> on text will make it editable. Press <strong>enter</strong> to save changes</p>
+                <strong>Double click</strong> on text will make it editable. Press <strong>enter</strong> to
+                save changes</p>
             <MyEditableSpan spanTitle={spanTitle} onChange={setSpanTitle}/>
             <MySelect options={optionsArray} value={2} onChange={onSelectChange}/>
             <MyRadio options={radioValues} onChange={onRadioChange}/>
