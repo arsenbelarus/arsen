@@ -5,12 +5,8 @@ import MyRadio from "./common/myRadio/MyRadio";
 import {v1} from "uuid";
 import PeopleArrayAndButton from "./peopleArray/PeopleArrayAndButtons";
 import DateComponent from "./date/DateComponent";
-import MyButton from "./common/myButton/MyButton";
-import {useDispatch, useSelector} from "react-redux";
-import {loadingFalseAC, loadingTrueAC} from "./store/main-reducer";
-import {AppRootStateType} from "./store/store";
-import Preloader from "./common/preloader/Preloader";
 import RunLoader from "./runLoader/RunLoader";
+import MyRange from "./common/myRange/MyRange";
 
 function Junior() {
 
@@ -48,6 +44,12 @@ function Junior() {
     const [spanTitle, setSpanTitle] = useState("Change me")
 
 
+    const [rangeValue, setRangeValue] = useState(0)
+    const onRangeChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setRangeValue(Number(e.currentTarget.value))
+    }
+
+
     return (
         <div>
             <RunLoader/>
@@ -59,8 +61,9 @@ function Junior() {
             <MyRadio options={radioValues} onChange={onRadioChange}/>
             <PeopleArrayAndButton people={people}/>
             <DateComponent/>
+            <MyRange value={rangeValue} minValue={0} maxValue={100} onChange={onRangeChange}/>
         </div>
     );
 }
 
-export default Junior;
+export default React.memo(Junior);

@@ -1,12 +1,9 @@
-export type LoadingTrueActionType = {
-    type: "SET-LOADING-TRUE",
+export type LoadingActionType = {
+    type: "TOOGLE-LOADING",
     loading: boolean
 }
-export type LoadingFalseActionType = {
-    type: "SET-LOADING-FALSE",
-    loading: boolean
-}
-type ActionType = LoadingTrueActionType | LoadingFalseActionType
+
+type ActionType = LoadingActionType
 
 export type LoadingType = boolean
 
@@ -15,26 +12,16 @@ const initialState = {
 }
 
 export const loadingReducer = (state = initialState, action: ActionType) => {
-    debugger
     switch (action.type) {
-        case "SET-LOADING-TRUE":
+        case "TOOGLE-LOADING":
             return {
                 ...state,
                 loading: action.loading
             }
-        case "SET-LOADING-FALSE":
-            return {
-                ...state,
-                loading: action.loading
-            }
-        default:
-            return state
+        default: return  state
     }
 }
 
-export const loadingTrueAC = (): LoadingTrueActionType => {
-    return {type: "SET-LOADING-TRUE", loading: true}
-}
-export const loadingFalseAC = (): LoadingFalseActionType => {
-    return {type: "SET-LOADING-FALSE", loading: false}
+export const toggleLoadingAC = (loading: boolean): LoadingActionType => {
+    return {type: "TOOGLE-LOADING", loading: loading}
 }

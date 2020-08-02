@@ -1,7 +1,7 @@
 import React from "react";
 import MyButton from "../common/myButton/MyButton";
 import {useDispatch} from "react-redux";
-import {loadingFalseAC, loadingTrueAC} from "../store/main-reducer";
+import {toggleLoadingAC} from "../store/main-reducer";
 
 type RunLoaderPropsType = {}
 
@@ -9,8 +9,8 @@ const RunLoader = (props: RunLoaderPropsType) => {
 
     const dispatch = useDispatch()
     const runLoaderButton = () => {
-        dispatch(loadingTrueAC())
-        setTimeout(() => dispatch(loadingFalseAC()), 3000)
+        dispatch(toggleLoadingAC(true))
+        setTimeout(() => dispatch(toggleLoadingAC(false)), 3000)
     }
 
     return (
