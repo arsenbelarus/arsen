@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {ChangeEvent, useCallback, useState} from 'react';
 import MyEditableSpan from "./common/myEditableSpan/MyEditableSpan";
 import MySelect from "./common/mySelect/MySelect";
 import MyRadio from "./common/myRadio/MyRadio";
@@ -45,9 +45,9 @@ function Junior() {
 
 
     const [rangeValue, setRangeValue] = useState(0)
-    const onRangeChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const onRangeChange = useCallback ((e: ChangeEvent<HTMLInputElement>) => {
         setRangeValue(Number(e.currentTarget.value))
-    }
+    }, [])
 
 
     return (
@@ -66,4 +66,4 @@ function Junior() {
     );
 }
 
-export default React.memo(Junior);
+export default Junior;

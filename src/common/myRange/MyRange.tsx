@@ -11,7 +11,7 @@ type MyRangeType = {
 }
 
 
-const MyRange = (props: MyRangeType) => {
+const MyRange = React.memo ((props: MyRangeType) => {
     return (
         <>
             <div className={s.myRange}>
@@ -23,6 +23,6 @@ const MyRange = (props: MyRangeType) => {
             </div>
         </>
     )
-}
+})
 
-export default React.memo(MyRange)
+export default MyRange
