@@ -1,8 +1,10 @@
 import {combineReducers, createStore} from 'redux';
 import {loadingReducer} from "./main-reducer";
+import {themeReducer} from "./theme-reducer";
 
 const rootReducer = combineReducers({
-    loadingPage: loadingReducer
+    loadingPage: loadingReducer,
+    theme: themeReducer
 })
 
 export const store = createStore(rootReducer);

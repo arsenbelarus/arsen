@@ -15,7 +15,7 @@ const MySelect = (props: MySelectType) => {
             <select className={s.select} onChange={props.onChange}>
                 {props.options.map((option, index) => {
                     if (props.value === index+1) {
-                        return <option className={s.option} selected={true} key={index+1}>{option.value}</option>
+                        return <option className={s.option} value={props.value} key={index+1}>{option.value}</option>
                     }
                     return <option className={s.option} >{option.value}</option>
                 })}

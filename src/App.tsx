@@ -4,8 +4,8 @@ import {HashRouter, NavLink, Route} from "react-router-dom";
 import PreJunior from "./PreJunior";
 import JuniorPlus from "./JuniorPlus";
 import Junior from "./Junior";
-import {useSelector} from "react-redux";
-import {AppRootStateType} from "./store/store";
+import {Provider, useSelector} from "react-redux";
+import {AppRootStateType, store} from "./store/store";
 import Preloader from "./common/preloader/Preloader";
 import {LoadingType} from "./store/main-reducer";
 
@@ -15,9 +15,10 @@ type propsType = {
 const App = (props: propsType) => {
     const loading = useSelector<AppRootStateType, LoadingType>(state => state.loadingPage.loading)
     return (
-        <HashRouter>
-            {loading ? <Preloader/> :
-                <div>
+        <Provider store={store}>
+            <HashRouter>
+                {loading ? <Preloader/> :
+                    <div>
                         <nav className={"navbar"}>
                             <NavLink to={"/PreJunior"} className={"menuItem"}
                                      activeClassName={"active"}> PreJunior </NavLink>
@@ -29,9 +30,11 @@ const App = (props: propsType) => {
                         <Route path='/Junior' render={() => <Junior/>}/>
                         <Route path='/JuniorPlus' render={() => <JuniorPlus/>}/>
                     </div>
-            }
+                }
 
-        </HashRouter>
+            </HashRouter>
+        </Provider>
+
     );
 }
 
