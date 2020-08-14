@@ -14,7 +14,6 @@ const initialState: ThemeType = {
 }
 
 export const themeReducer = (state = initialState, action: ActionType) => {
-    debugger
     switch (action.type) {
         case "CHANGE-THEME":
             return {

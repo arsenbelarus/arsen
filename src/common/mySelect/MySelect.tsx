@@ -17,7 +17,7 @@ const MySelect = (props: MySelectType) => {
                     if (props.value === index+1) {
                         return <option className={s.option} value={props.value} key={index+1}>{option.value}</option>
                     }
-                    return <option className={s.option} >{option.value}</option>
+                    return <option className={s.option} key={index+1}>{option.value}</option>
                 })}
             </select>
         </div>
